@@ -66,8 +66,6 @@ def lower(x):
 list_tmp = string.split()
 list_tmp = list(map(lower, list_tmp))
 
-print(list_tmp)
-
 max_int1 = 0
 max_int2 = 0
 max_int3 = 0
@@ -91,8 +89,6 @@ list_dif_words = list(set(list_tmp))
 list_sort.sort(reverse=True)
 list_sort = list_sort[:5]
 
-print(dict_tmp)
-
 for i in range(5):
 
     for key, value in dict_tmp.items():
@@ -102,4 +98,5 @@ for i in range(5):
             dict_tmp.pop(key)
             break
 
-print('кол-во разных слов:', len(list_dif_words))
+print()
+print('Количество различных слов:', len(list_dif_words))
