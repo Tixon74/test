@@ -18,14 +18,15 @@ def func(matr):
                 summ += matr[i, t] * matr1[t, j]
                 out_matr[i, j] = summ
 
+    # out_matr1 = np.linalg.inv(out_matr)
 
     return out_matr
 
 
-matrix_4_inv = np.array([[4, 1, 3], [3, 5, 2], [2, 6, 4], [1, 2, 3], [9, 5, 7]])
+matrix_4_inv = np.array([[4, 1, 3, 1], [3, 5, 2, 1], [2, 6, 4, 1], [1, 2, 3, 1]])
 
 func(matrix_4_inv)
 
 print(matrix_4_inv)
 print()
-print(func(matrix_4_inv))
+print(np.linalg.inv(func(matrix_4_inv)))
