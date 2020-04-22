@@ -6,8 +6,8 @@ def f1(x):
     y = x * x * x / 12 + x * (x - 15) - 72
     return y
 
-a = np.array([i for i in range(-10, 11)])
-
+a = np.array([i for i in range(-100, 101)])
+a = a/10
 
 print(a)
 
