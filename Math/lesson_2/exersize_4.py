@@ -20,7 +20,7 @@ def plot_vect(y, a, b):
     x = np.array([i for i in range(a, b)])
 
     plt.plot(x, y)
-    plt.show()
+    plt.figure()
 
 
 def plot_func(f, a, b):
@@ -66,3 +66,5 @@ dy = get_deriviate(f1, -1000, 1000)
 plot_func_with_extremums(dy, -999, 1000)
 plot_vect(dy, -999, 1000)
 plot_func(f1, -1000, 1000)
+
+plt.show()
